@@ -1,0 +1,210 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 51px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+
+  @include vp-1199 {
+    padding-bottom: calc(51px - (1200px - 100vw) / (1200 - 768) * (51 - 82));
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+
+.header__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    margin-bottom: 15px;
+  }
+
+  // @include vp-767 {
+  //   margin-bottom: calc(15px - (768px - 100vw) / (768 - 320) * (15 - 80))
+  // }
+}
+
+.header__navigation a {
+  @include font(26px, 26px, 700, $color-default-white);
+  letter-spacing: 0.03em;
+  font-family: $second-font;
+  height: 26px;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 39.5% 1fr auto;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding-right: calc(200px - (1200px - 100vw) / (1200 - 768) * 200);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header__list {
+  @include font(14px, 150%, 400, $color-default-white);
+  text-align: right;
+  list-style: none;
+  position: absolute;
+  top: 130px;
+  left: -80px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199 {
+    top: calc(130px - (1366px - 100vw) / (1366 - 768) * (130 - 93));
+    left: -90px
+  }
+
+  @include vp-767 {
+    top: 80px;
+    left: -80px;
+  }
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 62px;
+  padding-top: 105px;
+  position: relative;
+
+  @include vp-1199 {
+    padding-right: calc(62px - (1200px - 100vw) / (1200 - 768) * 62);
+    padding-top: calc(105px - (1200px - 100vw) / (1200 - 768) * (105 - 50));
+  }
+
+  @include vp-767 {
+    padding-top: 50px;
+  }
+}
+
+.header__title-wrapper {
+  position: relative;
+}
+
+.header__title p {
+  @include font(49px, 59px, 400, $color-default-white);
+  letter-spacing: 0.03em;
+  font-family: $second-font;
+  margin: 0 0 8px 0;
+
+  @include vp-1199 {
+    font-size: calc(49px - (1200px - 100vw) / (1200 - 768) * (49 - 34));
+    line-height: calc(59px - (1200px - 100vw) / (1200 - 768) * (59 - 41));
+    margin: 0 0 4px 0;
+  }
+
+  @include vp-767 {
+    font-size: calc(34px - (768px - 100vw) / (768 - 320) * (34 - 28));
+    line-height: calc(41px - (768px - 100vw) / (768 - 320) * (41 - 34));
+    margin: 0 0 7px 0;
+  }
+}
+
+.header__title h2 {
+  @include font(109px, 109px, 700, $color-default-white);
+  font-family: $second-font;
+  letter-spacing: 0.03em;
+  text-align: right;
+  margin: 0 0 57px;
+
+  @include vp-1199 {
+    font-size: calc(109px - (1200px - 100vw) / (1200 - 768) * (109 - 86));
+    line-height: calc(109px - (1200px - 100vw) / (1200 - 768) * (109 - 86));
+    margin-bottom: calc(86px - (1200px - 100vw) / (1200 - 768) * (86 - 40));
+  }
+
+  @include vp-767 {
+    font-size: calc(86px - (768px - 100vw) / (768 - 320) * (86 - 78));
+    line-height: calc(86px - (768px - 100vw) / (768 - 320) * (86 - 78));
+    margin-bottom: 42px;
+  }
+}
+
+.header__title a {
+  @include font(12px, 14px, 700, $color-default-white);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 20px 55px;
+  border: 4px solid $color-default-white;
+
+  @include vp-1199 {
+    padding: 20px calc(55px - (1200px - 100vw) / (1200 - 768) * (55 - 30));
+  }
+
+  @include vp-767 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.header__image {
+  @include vp-1199 {
+    object-fit: contain;
+    width: calc(500px - (1200px - 100vw) / (1200 - 768) * (500 - 324));
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.header__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+  padding-bottom: 42px;
+  // padding-right: 103px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.header__social li {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header__social a {
+  color: $color-default-white;
+  padding: 5px 0 0 10px;
+}
+
+@media (max-width: $vp-768) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 82px;
+  }
+
+  .header__navigation img {
+    width: 82px;
+
+    @include vp-767 {
+      width: 68px;
+      height: 15px
+    }
+  }
+
+  .header__navigation a {
+    @include font(24px, 24px, 700, $color-default-white);
+    letter-spacing: 0.02em;
+
+    @include vp-767 {
+      @include font(20px, 20px, 700, $color-default-white);
+    }
+  }
+}

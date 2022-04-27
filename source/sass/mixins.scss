@@ -1,7 +1,16 @@
 @mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     @content;
   }
+}
+
+@mixin font($size, $line, $weight, $color) {
+  font-size: $size;
+  line-height: $line;
+  font-weight: $weight;
+  color: $color;
 }
 
 // Desktop first
@@ -20,6 +29,12 @@
 
 @mixin vp-1279 {
   @media (max-width: $vp-1280 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1199 {
+  @media (max-width: $vp-1200 - 1) {
     @content;
   }
 }
