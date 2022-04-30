@@ -1,0 +1,244 @@
+.offers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $color-light-blue;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.offers__wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+  position: relative;
+
+  @include vp-1199 {
+    padding-left: 163px;
+    padding-right: 163px;
+  }
+
+  @include vp-767 {
+    padding-left: calc(163px - (768px - 100vw) / (768 - 320) * (163 - 15));
+    padding-right: calc(163px - (768px - 100vw) / (768 - 320) * (163 - 15));
+  }
+}
+
+.offers__image {
+  position: absolute;
+  right: 0;
+  top: 385px;
+
+  @include vp-1199 {
+    top: 1360px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.offers__title {
+  @include font(49px, 49px, 700, $color-basic-dark);
+  font-family: $second-font;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 35px;
+  text-align: center;
+
+  @include vp-1199 {
+    @include font(42px, 42px, 700, $color-basic-dark);
+    margin: 0 0 30px;
+  }
+
+  @include vp-767 {
+    @include font(32px, 32px, 700, $color-basic-dark);
+    margin: 0 0 20px;
+  }
+}
+
+.offers__control-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  width: 341px;
+  margin: 0 auto 39px;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 39px;
+    left: 0;
+    background-color: $color-dark-gray-20;
+
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.offers__control-item {
+  @include font(20px, 150%, 400, $color-basic-dark-50);
+  padding-bottom: 8px;
+
+  &--current {
+    color: $color-basic-dark;
+    border-bottom: 2px solid $color-basic-red;
+  }
+
+  @include vp-1199 {
+    @include font(18px, 150%, 400, $color-basic-dark-50);
+    padding-bottom: 11px;
+
+    &--current {
+      color: $color-basic-dark;
+      border-bottom: 2px solid $color-basic-red;
+    }
+  }
+
+  @include vp-767 {
+    @include font(16px, 150%, 400, $color-basic-dark-50);
+    padding-bottom: 15px;
+
+    &--current {
+      color: $color-basic-dark;
+      border-bottom: 2px solid $color-basic-red;
+    }
+  }
+
+}
+
+.offers__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    row-gap: 35px;
+  }
+}
+
+.offers__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-default-white;
+  height: 448px;
+  z-index: 10;
+
+  @include vp-767 {
+    height: 384px;
+  }
+}
+
+.offers__item-wrapper {
+  width: 96.1%;
+  height: 96.875%;
+  background-color: $color-default-white;
+  padding: 55px 0;
+  z-index: 10;
+
+  @include vp-1199 {
+    padding: 60px 0;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
+  }
+}
+
+.offers__item-title {
+  @include font(26px, 29px, 799, $color-basic-dark);
+  text-align: center;
+  margin: 0 0 10px;
+
+  @include vp-767 {
+    @include font(22px, 110%, 799, $color-basic-dark);
+
+  }
+}
+
+.offers__item-time {
+  @include font(16px, 150%, 400, $color-light-dark);
+  text-align: center;
+  margin: 0 0 65px;
+
+  @include vp-767 {
+    margin: 0 0 50px;
+  }
+}
+
+.offers__cost {
+  position: relative;
+
+  @include vp-767 {
+    padding-left: 7px;
+  }
+}
+
+.offers__item-cost {
+  @include font(60px, 150%, 700, $color-basic-cyan);
+  text-align: center;
+  margin: 0 0 33px;
+
+  @include vp-767 {
+    @include font(48px, 150%, 700, $color-basic-cyan);
+    margin: 0 0 30px;
+  }
+}
+
+.offers__item-cost span {
+  color: $color-basic-dark;
+}
+
+.offers__item-shadow {
+  @include font(100px, 150%, 700, $color-light-gray);
+  position: absolute;
+  margin: 0;
+  top: -55px;
+  left: calc(50% - 101px);
+  z-index: -10;
+}
+
+.offers__item-link {
+  display: block;
+  @include font(12px, 14px, 700, $color-basic-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 206px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 0;
+  border: 2px solid $color-basic-dark;
+}
+
+.offers__item:hover {
+  background: linear-gradient(135deg, #d10a42, #00359f);
+}
+
+.offers__item:hover .offers__item-link {
+  border: none;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: $color-default-white;
+  ;
+}
