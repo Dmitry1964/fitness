@@ -1,14 +1,15 @@
 .header {
   padding-top: 30px;
-  padding-bottom: 51px;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  padding-bottom: 46px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
   @include vp-1199 {
-    padding-bottom: calc(51px - (1200px - 100vw) / (1200 - 768) * (51 - 82));
+    padding-bottom: calc(51px - (1200px - 100vw) / (1200 - 768) * (51 - 83));
   }
 
   @include vp-767 {
     padding-top: 20px;
+    padding-bottom: 79px;
   }
 }
 
@@ -60,7 +61,7 @@
 
   @include vp-1199 {
     top: calc(130px - (1366px - 100vw) / (1366 - 768) * (130 - 93));
-    left: -90px
+    left: -90px;
   }
 
   @include vp-767 {
@@ -187,7 +188,7 @@
 @media (max-width: $vp-768) {
   .header {
     padding-top: 40px;
-    padding-bottom: 82px;
+    padding-bottom: 83px;
   }
 
   .header__navigation img {
@@ -195,7 +196,7 @@
 
     @include vp-767 {
       width: 68px;
-      height: 15px
+      height: 15px;
     }
   }
 
