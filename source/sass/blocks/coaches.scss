@@ -1,0 +1,18 @@
+.coaches {
+  padding-bottom: 120px;
+}
+
+.coaches__title {
+  @include font(49px, 49px, 700, $color-basic-dark);
+  letter-spacing: 0.03em;
+  margin: 0 0 62px;
+}
+
+.coaches__list {
+  display: flex;
+}
+
+.coaches__item-image {
+  width: 260px;
+  height: 294px;
+}

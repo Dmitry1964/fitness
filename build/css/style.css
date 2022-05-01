@@ -1236,6 +1236,10 @@ button,
   display: flex;
   padding: 5px 0 0;
   margin: 0 0 20px;
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .banner__info-title span {
@@ -1248,13 +1252,6 @@ button,
 
 .banner__info-title p {
   margin: 0;
-}
-
-.banner__info-title dd {
-  font-size: 40px;
-  line-height: 100%;
-  font-weight: 700;
-  color: #ffffff;
 }
 
 .banner__desc {
@@ -1282,6 +1279,30 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
+}
+
+.coaches {
+  padding-bottom: 120px;
+}
+
+.coaches__title {
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  color: #102654;
+  letter-spacing: 0.03em;
+  margin: 0 0 62px;
+}
+
+.coaches__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coaches__item-image {
+  width: 260px;
+  height: 294px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1487,15 +1508,12 @@ button,
   .banner__info-title dd {
     padding: 0;
     margin: 0 0 7px;
+    font-size: 24px;
   }
 
   .banner__info-title span {
     font-size: 10px;
     line-height: 130%;
-  }
-
-  .banner__info-title dd {
-    font-size: 24px;
   }
 
   .banner__desc {

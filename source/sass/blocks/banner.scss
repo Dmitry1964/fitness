@@ -5,7 +5,6 @@
   @include vp-1199 {
     padding-top: 105px;
     padding-bottom: 100px;
-
   }
 }
 
@@ -76,9 +75,12 @@
   padding: 5px 0 0;
   margin: 0 0 20px;
 
+  @include font(40px, 100%, 700, $color-default-white);
+
   @include vp-1199 {
     padding: 0;
     margin: 0 0 7px;
+    font-size: 24px;
   }
 }
 
@@ -96,14 +98,6 @@
   margin: 0;
 }
 
-.banner__info-title dd {
-  @include font(40px, 100%, 700, $color-default-white);
-
-  @include vp-1199 {
-    font-size: 24px;
-  }
-}
-
 .banner__desc {
   @include font(18px, 150%, 400, $color-default-white);
   margin: 0 0 45px;
@@ -116,6 +110,7 @@
 
 .banner__link {
   display: block;
+
   @include font(12px, 14px, 700, $color-default-white);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -141,7 +136,6 @@
 }
 
 @media (max-width: $vp-768) {
-
   .banner__title {
     @include font(52px, 52px, 700, $color-default-white);
   }
