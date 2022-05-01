@@ -89,7 +89,7 @@
             </picture>
           </div>
           <div class="promo__video">
-            <video src="img/video.mp4" metadata poster="img/background-video.jpg">
+            <video src="img/video.mp4" poster="img/background-video.jpg">
             </video>
             <button type="button"></button>
           </div>
@@ -212,6 +212,41 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner__wrapper container">
+          <div class="banner__info">
+            <div class="banner__info-title">
+              <h2 class="banner__title">SUPER<br>GAMES</h2>
+              <dl>
+                <dt>Дата</dt>
+                <dd>
+                  <p>7</p>
+                  <span>Марта<br>2019</span>
+                </dd>
+                <dt>Время</dt>
+                <dd>12:00</dd>
+              </dl>
+            </div>
+            <p class="banner__desc">Ежегодные соревнования по CrossFit</p>
+            <a class="banner__link" href="sitemap.html">заполнить заявку</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/super-games-mobile.webp, img/super-games-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/super-games-tablet.webp, img/super-games-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/super-games-desk.webp, img/super-games-desk@2x.webp 2x">
+            <!--1x: 290px; 2x: 580px-->
+            <source media="(max-width: 767px)" srcset="img/super-games-mobile.jpg 1x, img/super-games-mobile@2x.jpg 2x">
+            <!--1x: 386px; 2x: 772px-->
+            <source media="(max-width: 1199px)"
+              srcset="img/super-games-tablet.jpg 1x, img/super-games-tablet@2x.jpg 2x">
+            <!--1x: 660px; 2x: 1320px-->
+            <img class="banner__image" src="img/super-games-desk.jpg" srcset="img/super-games-desk@2x.jpg 2x"
+              alt="Взрыв талька">
+          </picture>
         </div>
       </section>
     </main>

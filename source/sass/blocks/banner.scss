@@ -1,0 +1,155 @@
+.banner {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 105px;
+    padding-bottom: 100px;
+
+  }
+}
+
+.banner__wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.banner__info {
+  padding: 83px 78px;
+  background-color: $color-red-background;
+
+  @include vp-1199 {
+    padding: 49px 45px;
+  }
+}
+
+.banner__info-title {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 50px;
+
+  @include vp-1199 {
+    column-gap: 29px;
+  }
+}
+
+.banner__title {
+  @include font(90px, 90px, 700, $color-default-white);
+  font-family: $second-font;
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: calc(90px - (1200px - 100vw) / (1200 - 768) * (90 - 52));
+    line-height: calc(90px - (1200px - 100vw) / (1200 - 768) * (90 - 52));
+  }
+}
+
+.banner__info-title dl {
+  margin: 0;
+}
+
+.banner__info-title dt {
+  @include font(18px, 150%, 400, $color-default-white);
+  border-bottom: 1px solid $color-default-white;
+
+  &:first-of-type {
+    width: 64px;
+
+    @include vp-1199 {
+      width: 43px;
+    }
+  }
+
+  @include vp-1199 {
+    font-size: 12px;
+    width: 56px;
+  }
+}
+
+.banner__info-title dd {
+  display: flex;
+  padding: 5px 0 0;
+  margin: 0 0 20px;
+
+  @include vp-1199 {
+    padding: 0;
+    margin: 0 0 7px;
+  }
+}
+
+.banner__info-title span {
+  @include font(14px, 150%, 400, $color-default-white);
+  padding: 0 0 0 5px;
+
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+}
+
+.banner__info-title p {
+  margin: 0;
+}
+
+.banner__info-title dd {
+  @include font(40px, 100%, 700, $color-default-white);
+
+  @include vp-1199 {
+    font-size: 24px;
+  }
+}
+
+.banner__desc {
+  @include font(18px, 150%, 400, $color-default-white);
+  margin: 0 0 45px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    margin: 0 0 30px;
+  }
+}
+
+.banner__link {
+  display: block;
+  @include font(12px, 14px, 700, $color-default-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 25px 100px;
+  border: 4px solid $color-default-white;
+  text-align: center;
+
+  @include vp-1199 {
+    @include font(10px, 12px, 700, $color-default-white);
+    border: 2px solid $color-default-white;
+    padding: 13px 49px;
+  }
+}
+
+.banner__image {
+  object-fit: cover;
+  height: 100%;
+
+  @include vp-767 {
+    width: 100%;
+    height: 292px;
+  }
+}
+
+@media (max-width: $vp-768) {
+
+  .banner__title {
+    @include font(52px, 52px, 700, $color-default-white);
+  }
+}
+
+@media (max-width: $vp-375) {
+  .banner {
+    padding-top: 63px;
+    padding-bottom: 77px;
+  }
+}
