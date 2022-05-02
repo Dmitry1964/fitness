@@ -1,18 +1,55 @@
 .coaches {
-  padding-bottom: 120px;
+  padding-bottom: 115px;
+
+  @include vp-1199 {
+    padding-bottom: 110px;
+  }
 }
 
 .coaches__title {
   @include font(49px, 49px, 700, $color-basic-dark);
+  font-family: $second-font;
   letter-spacing: 0.03em;
-  margin: 0 0 62px;
+  margin: 0 0 50px;
+
+  @include vp-1199 {
+    @include font(42px, 42px, 700, $color-basic-dark);
+    text-align: center;
+    margin: 0 0 40px
+  }
+
+  @include vp-1199 {
+    @include font(32px, 32px, 700, $color-basic-dark);
+    margin: 0 0 43px;
+  }
 }
 
 .coaches__list {
   display: flex;
 }
 
-.coaches__item-image {
+.coaches__image {
+  object-fit: cover;
   width: 260px;
   height: 294px;
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.coaches__item-image {
+  position: relative;
+}
+
+.coaches__name {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
