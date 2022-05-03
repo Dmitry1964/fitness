@@ -1,0 +1,136 @@
+.feedback {
+  padding-bottom: 120px;
+}
+
+.feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback__title {
+  @include font(49px, 49px, 700, $color-basic-dark);
+  font-family: $second-font;
+  letter-spacing: 0.03em;
+  margin: 0 0 50px;
+
+  @include vp-1199 {
+    @include font(42px, 42px, 700, $color-basic-dark);
+    margin: 0 0 40px;
+  }
+
+  @include vp-767 {
+    @include font(32px, 32px, 700, $color-basic-dark);
+    margin: 0 0 42px;
+  }
+}
+
+
+.feedback__swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.feedback__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    width: 77.93%;
+
+  }
+}
+
+.feedback__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 28px;
+  width: 560px;
+  height: 242px;
+  padding: 62px;
+  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  background-color: $color-resolution-blue;
+
+  @include vp-1199 {
+    width: 566px;
+    padding-left: 65px;
+  }
+
+  @include vp-767 {
+    padding: 40px 25px 33px;
+    height: 335px;
+    width: 100%;
+    column-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.feedback__item img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: right;
+  }
+}
+
+.feedback__item h3 {
+  @include font(20px, 80%, 700, $color-default-white);
+  margin: 0 0 18px;
+
+  @include vp-767 {
+    line-height: 130%;
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+}
+
+.feedback__item p {
+  @include font(16px, 140%, 400, $color-default-white);
+  margin: 0;
+
+  @include vp-767 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+.feedback__button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include vp-1199 {
+    width: 57px;
+  }
+
+  @include vp-767 {
+    width: 32px;
+  }
+}
+
+.feedback__button-prev {
+  background-image: url(../../img/svg/button-prev.svg);
+  background-repeat: no-repeat;
+}
+
+.feedback__button-next {
+  background-image: url(../../img/svg/button-next.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
