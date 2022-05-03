@@ -1,6 +1,6 @@
 .features {
   padding-top: 125px;
-  padding-bottom: 115px;
+  padding-bottom: 105px;
   background-color: $color-gray-background;
 
   @include vp-1199 {
@@ -44,7 +44,6 @@
   max-width: 1040px;
   display: grid;
   grid-template-columns: 32.69% auto 32.69%;
-  // grid-template-rows: repeat(10, auto);
   grid-auto-flow: dense;
   column-gap: 5.77%;
   list-style: none;
@@ -69,6 +68,11 @@
 
   &:nth-child(n+4) {
     align-items: flex-end;
+    border-top: 1px solid $color-basic-red-20;
+
+    @include vp-1199 {
+      border-top: none;
+    }
 
     @include vp-767 {
       align-items: center;
@@ -83,6 +87,8 @@
     flex-direction: column;
     align-items: center;
     height: 145px;
+    padding-left: 45px;
+    padding-right: 45px;
 
     &:nth-child(4) {
       transform: translateY(-10px);
