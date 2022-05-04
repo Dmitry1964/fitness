@@ -522,7 +522,6 @@
         <div class="feedback__wrapper container">
           <h2 class="feedback__title">Отзывы</h2>
           <div class="feedback__swiper">
-            <button class="feedback__button feedback__button-prev"></button>
             <ul class="feedback__list">
               <li class="feedback__item">
                 <img src="img/avatar1.png" width="80" height="80" alt="Аватар посетителя фитнес-центра">
@@ -539,11 +538,52 @@
               </li>
               <li class="feedback__item  visually-hidden">
                 <img src="img/avatar3.png" width="80" height="80" alt="Аватар посетителя фитнес-центра">
-                <h3 class="feedback__name">Доцент</h3>
+                <h3>Доцент</h3>
                 <p>Видали и лучше!</p>
               </li>
             </ul>
-            <button class="feedback__button feedback__button-next"></button>
+            <button class="feedback__button feedback__button--prev"></button>
+            <button class="feedback__button feedback__button--next"></button>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__wrapper">
+          <div class="contact__left-block">
+            <article class="contact__bid">
+              <h2 class="contact__title contact__title--bid">Бесплатное занятие</h2>
+              <form class="contact__form" action="#" method="GET">
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name">
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone">
+                <button type="submit">Отправить</button>
+              </form>
+            </article>
+          </div>
+          <div class="contact__right-block">
+            <article class="contact__info">
+              <h2 class="contact__title">Контакты</h2>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li class="contact__item">
+                  <h3>Телефон:</h3>
+                  <p>8-800-555-55-55</p>
+                </li>
+                <li class="contact__item">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contact__item">
+                  <h3>Email:</h3>
+                  <p>omsk@supergym.ru</p>
+                </li>
+              </ul>
+            </article>
+
           </div>
         </div>
       </section>
