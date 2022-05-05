@@ -103,6 +103,7 @@
 .promo__image {
   width: 100%;
   justify-self: center;
+  background-color: $color-light-slate-grey;
 
   @include vp-767 {
     margin-bottom: 40px;

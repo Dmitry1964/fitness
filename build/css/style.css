@@ -961,6 +961,7 @@ button,
   width: 100%;
   -ms-grid-column-align: center;
   justify-self: center;
+  background-color: #74819c;
 }
 
 .promo__image img {
@@ -1536,6 +1537,10 @@ button,
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-bottom: 1px solid #ffffff;
+}
+
+.actions__image {
+  background-color: #103aae;
 }
 
 .actions__banner img {

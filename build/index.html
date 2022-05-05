@@ -31,8 +31,11 @@
           <a href="#">Купить абонемент</a>
         </div>
         <picture>
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="img/superman-tablet.webp 1x, img/superman-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/superman-desktop.webp, img/superman-desktop@2x.webp 2x">
           <!--1x: 324px; 2x: 648px; -->
-          <source media="(max-width: 768px)" srcset="img/superman-tablet.jpg 1x, img/superman-tablet@2x.jpg 2x">
+          <source media="(max-width: 1199px)" srcset="img/superman-tablet.jpg 1x, img/superman-tablet@2x.jpg 2x">
           <!--1x: 500px; 2x: 1000px; -->
           <img class="header__image" src="img/superman-desktop.jpg" srcset="img/superman-desktop@2x.jpg 2x"
             alt="Фото железного человека в майке супермена и с лицом Дауни Jr">
@@ -79,13 +82,17 @@
           </div>
           <div class="promo__image">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
               <!--1x: 320px; 2x: 640px; -->
               <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
               <!--1x: 678px; 2x: 1356px; -->
               <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
               <!--1x: 660px; 2x: 1320px; -->
-              <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x"
-                alt="Фото идеального тела в майке супермена">
+              <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" alt="Фото тренажерного зала">
             </picture>
           </div>
           <div class="promo__video">
@@ -483,21 +490,24 @@
                 <p>Безлимитный абонемент в тренажерный зал</p>
                 <a href="#">Подробнее</a>
               </div>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/super-girl-mobile.webp, img/super-girl-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="img/super-girl-tablet.webp, img/super-girl-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/super-girl-desk.webp, img/super-girl-desk@2x.webp 2x">
-                <!--1x: 290px; 2x: 580px-->
-                <source media="(max-width: 767px)"
-                  srcset="img/super-girl-mobile.jpg 1x, img/super-girl-mobile@2x.jpg 2x">
-                <!--1x: 399px; 2x: 798px-->
-                <source media="(max-width: 1199px)"
-                  srcset="img/super-girl-tablet.jpg 1x, img/super-girl-tablet@2x.jpg 2x">
-                <!--1x: 280px; 2x: 560px-->
-                <img src="img/super-girl-desk.jpg" srcset="img/super-girl-desk@2x.jpg 2x" alt="Супер девушка">
-              </picture>
+              <div class="actions__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/super-girl-mobile.webp, img/super-girl-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/super-girl-tablet.webp, img/super-girl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/super-girl-desk.webp, img/super-girl-desk@2x.webp 2x">
+                  <!--1x: 290px; 2x: 580px-->
+                  <source media="(max-width: 767px)"
+                    srcset="img/super-girl-mobile.jpg 1x, img/super-girl-mobile@2x.jpg 2x">
+                  <!--1x: 399px; 2x: 798px-->
+                  <source media="(max-width: 1199px)"
+                    srcset="img/super-girl-tablet.jpg 1x, img/super-girl-tablet@2x.jpg 2x">
+                  <!--1x: 280px; 2x: 560px-->
+                  <img src="img/super-girl-desk.jpg" srcset="img/super-girl-desk@2x.jpg 2x" alt="Супер девушка">
+                </picture>
+
+              </div>
             </div>
             <div class="actions__info">
               <div class="actions__info-wrapper">
