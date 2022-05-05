@@ -553,10 +553,14 @@
             <article class="contact__bid">
               <h2 class="contact__title contact__title--bid">Бесплатное занятие</h2>
               <form class="contact__form" action="#" method="GET">
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone">
+                <div class="contact__field">
+                  <label for="name">Имя</label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="contact__field contact__field-phone">
+                  <label for="phone">Телефон</label>
+                  <input type="number" name="phone" id="phone" required>
+                </div>
                 <button type="submit">Отправить</button>
               </form>
             </article>
@@ -569,7 +573,7 @@
                   <h3>Адрес:</h3>
                   <p>г. Омск, ул. 60 лет Октября, 7</p>
                 </li>
-                <li class="contact__item">
+                <li class="contact__item contact__item-phone">
                   <h3>Телефон:</h3>
                   <p>8-800-555-55-55</p>
                 </li>
@@ -577,19 +581,51 @@
                   <h3>График работы:</h3>
                   <p>Пн-Вс: с 8:00 до 22:00</p>
                 </li>
-                <li class="contact__item">
+                <li class="contact__item contact__item-mail">
                   <h3>Email:</h3>
                   <p>omsk@supergym.ru</p>
                 </li>
               </ul>
             </article>
-
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <img class="footer__logo" src="img/svg/logo.svg" width="89" height="20" alt="Логотип">
+        <nav class="footer__nav">
+          <a class="footer__zero" href=""></a>
+          <a class="footer__first" href="#">Услуги</a>
+          <a class="footer__second" href="#">Абонементы</a>
+          <a class="footer__third" href="#">Акции</a>
+          <a class="footer__fourth" href="#">Тренеры</a>
+          <a class="footer__fifth" href="#">Расписание</a>
+        </nav>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#">
+              <svg class="footer__icon-vk" width="24" height="13">
+                <use href="img/sprite_auto.svg#icon-vk-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <svg class="footer__icon-ig" width="24" height="24">
+                <use href="img/sprite_auto.svg#icon-ig-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#">
+              <svg class="footer__icon-fb" width="12" height="24">
+                <use href="img/sprite_auto.svg#icon-fb-footer"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
 

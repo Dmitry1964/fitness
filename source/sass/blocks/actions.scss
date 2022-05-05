@@ -4,12 +4,12 @@
 
   @include vp-1199 {
     padding-top: 90px;
-    padding-bottom: 100px
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding-top: 62px;
-    padding-bottom: 70px
+    padding-bottom: 70px;
   }
 }
 
@@ -81,6 +81,7 @@
 
 .actions__banner-desc dd {
   margin: 0;
+
   @include font(70px, 110%, 700, $color-default-white);
 
   @include vp-767 {
@@ -174,12 +175,11 @@
 
   @include vp-767 {
     text-align: center;
-    margin: 0 0 25px
+    margin: 0 0 25px;
   }
 }
 
 .actions__info-wrapper:first-of-type p {
-
   @include vp-1199 {
     margin: 0 0 42px;
   }

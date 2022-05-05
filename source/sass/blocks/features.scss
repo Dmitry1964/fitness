@@ -11,12 +11,10 @@
   @include vp-767 {
     padding-top: 70px;
     padding-bottom: 70px;
-
   }
 }
 
 .features__wrapper {
-
   @include vp-767 {
     padding-left: 0;
     padding-right: 0;
@@ -97,7 +95,6 @@
     &:nth-child(5) {
       transform: translateY(-10px);
     }
-
   }
 }
 
@@ -131,7 +128,7 @@
   background-clip: text;
 
   @include vp-1199 {
-    font-size: 58px
+    font-size: 58px;
   }
 }
 
@@ -158,11 +155,6 @@
 
   @include vp-1199 {
     font-size: 20px;
-    margin-bottom: 0px;
-  }
-
-  @include vp-767 {
-    text-align: center;
   }
 }
 
@@ -235,7 +227,6 @@
 }
 
 .feature__breake {
-
   @include vp-1199 {
     display: none;
   }
