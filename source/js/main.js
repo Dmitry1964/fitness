@@ -1,5 +1,7 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { playButton, onPlayButtonHendler } from './video';
+import { controlList, setOffersList } from './modules/offers';
 
 // ---------------------------------
 
@@ -9,6 +11,44 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  playButton.addEventListener('click', () => {
+    onPlayButtonHendler();
+  });
+
+  controlList.addEventListener('click', (evt) => {
+    const element = evt.target;
+    setOffersList(element);
+  });
+
+  const swiper = new Swiper('.coaches__swiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    grabCursor: true,
+    speed: 800,
+
+    navigation: {
+      nextEl: '.coaches__next',
+      prevEl: '.coaches__prev',
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
+  swiper.slideNext();
+
+
 
   // Modules
   // ---------------------------------

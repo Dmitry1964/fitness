@@ -881,6 +881,10 @@ button,
   text-transform: uppercase;
   padding: 20px 55px;
   border: 4px solid #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .header__social {
@@ -1059,7 +1063,14 @@ button,
   line-height: 150%;
   font-weight: 400;
   color: rgba(16, 38, 84, 0.5);
-  padding-bottom: 8px;
+  border: none;
+  background-color: transparent;
+  padding: 0 0 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .offers__control-item--current {
@@ -1153,6 +1164,10 @@ button,
 
 .offers__item-link {
   display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -1265,6 +1280,10 @@ button,
 
 .banner__link {
   display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
@@ -1283,7 +1302,7 @@ button,
 }
 
 .coaches {
-  padding-bottom: 115px;
+  padding-bottom: 88px;
 }
 
 .coaches__title {
@@ -1296,27 +1315,109 @@ button,
   margin: 0 0 50px;
 }
 
-.coaches__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.coaches__wrapper {
+  position: relative;
 }
 
 .coaches__image {
+  position: relative;
+}
+
+.coaches__image h3 {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  bottom: 47px;
+  margin: 0;
+}
+
+.coaches__info {
+  background-color: rgba(16, 38, 84, 0.89);
+  width: 260px;
+  height: 294px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 55px;
+  display: none;
+}
+
+.coaches__slide:hover .coaches__info {
+  display: block;
+}
+
+.coaches__slide:hover .coaches__image h3 {
+  display: none;
+}
+
+.coaches__info h3 {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.coaches__info p {
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #b6bdcc;
+  margin: 0 0 35px;
+  text-align: center;
+}
+
+.coaches__info ul {
+  margin: 0;
+  padding-left: 75px;
+}
+
+.coaches__info li {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.coaches__info li:last-child {
+  margin-bottom: 0;
+}
+
+.coaches__next {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/svg/button-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 55%;
+  right: 40px;
+  cursor: pointer;
+}
+
+.coaches__prev {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/svg/button-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 55%;
+  left: 40px;
+  cursor: pointer;
+}
+
+.coaches__slide img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 260px;
   height: 294px;
-}
-
-.coaches__item-image {
-  position: relative;
-}
-
-.coaches__name {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .features {
@@ -1798,6 +1899,10 @@ button,
   grid-column-start: 1;
   -ms-grid-column-span: 2;
   grid-column-end: 3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -1899,6 +2004,10 @@ button,
   font-weight: 400;
   color: #ffffff;
   padding-left: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .footer__list {
@@ -2148,7 +2257,7 @@ button,
   }
 
   .coaches {
-    padding-bottom: 110px;
+    padding-bottom: 77px;
   }
 
   .coaches__title {
@@ -2160,15 +2269,25 @@ button,
     margin: 0 0 40px;
   }
 
-  .coaches__title {
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 700;
-    color: #102654;
-    margin: 0 0 43px;
+  .coaches__swiper {
+    width: 566px;
   }
 
-  .coaches__image {
+  .coaches__info {
+    width: 268px;
+  }
+
+  .coaches__next {
+    top: 53%;
+    right: 38px;
+  }
+
+  .coaches__prev {
+    top: 53%;
+    right: 38px;
+  }
+
+  .coaches__slide img {
     width: 268px;
     height: 294px;
   }
@@ -2659,10 +2778,49 @@ button,
   }
 
   .coaches {
-    padding-bottom: 70px;
+    padding-bottom: 43px;
   }
 
-  .coaches__image {
+  .coaches__title {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #102654;
+    margin: 0 0 43px;
+  }
+
+  .coaches__swiper {
+    width: 226px;
+  }
+
+  .coaches__info {
+    padding-top: 43px;
+    width: 226px;
+    height: 274px;
+  }
+
+  .coaches__info ul {
+    padding-left: 50px;
+  }
+
+  .coaches__next {
+    background-image: url("../img/svg/button-next-mobile.svg");
+    right: 5px;
+    top: 52%;
+  }
+
+  .coaches__prev {
+    background-image: url("../img/svg/button-prev-mobile.svg");
+    left: 5px;
+    top: 52%;
+  }
+
+  .coaches__slide img {
+    width: 226px;
+    height: 274px;
+  }
+
+  .coaches__slide img {
     width: 226px;
     height: 274px;
   }

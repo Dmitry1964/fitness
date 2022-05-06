@@ -90,7 +90,11 @@
 
 .offers__control-item {
   @include font(20px, 150%, 400, $color-basic-dark-50);
-  padding-bottom: 8px;
+  border: none;
+  background-color: transparent;
+  padding: 0 0 8px;
+  user-select: none;
+  cursor: pointer;
 
   &--current {
     color: $color-basic-dark;
@@ -225,6 +229,7 @@
 
 .offers__item-link {
   display: block;
+  user-select: none;
 
   @include font(12px, 14px, 700, $color-basic-dark);
   text-transform: uppercase;

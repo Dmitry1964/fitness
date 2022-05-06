@@ -158,6 +158,7 @@
 .contact__form button {
   grid-column-start: 1;
   grid-column-end: 3;
+  user-select: none;
 
   @include font(14px, 16px, 700, $color-default-white);
   letter-spacing: 0.05em;

@@ -110,6 +110,7 @@
 
 .banner__link {
   display: block;
+  user-select: none;
 
   @include font(12px, 14px, 700, $color-default-white);
   text-transform: uppercase;
