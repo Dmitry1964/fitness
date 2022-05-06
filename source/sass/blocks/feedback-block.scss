@@ -10,6 +10,10 @@
   }
 }
 
+.feedback__wrapper {
+  position: relative;
+}
+
 .feedback__title {
   @include font(49px, 49px, 700, $color-basic-dark);
   font-family: $second-font;
@@ -30,12 +34,10 @@
 
 .feedback__swiper {
   width: 560px;
-  height: 242px;
-  margin: 0 auto;
-  padding: 62px 62px 0;
+  min-height: 242px;
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
-  position: relative;
+  // position: relative;
 
   @include vp-1199 {
     width: 566px;
@@ -43,26 +45,24 @@
 
   @include vp-767 {
     width: 77.93%;
-    height: 335px;
-    padding-top: calc(62px - (768px - 100vw) / (768 - 320) * (62 - 40));
-    padding-left: calc(62px - (768px - 100vw) / (768 - 320) * (62 - 25));
-    padding-right: calc(62px - (768px - 100vw) / (768 - 320) * (62 - 25));
+    min-height: 335px;
   }
-}
-
-.feedback__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .feedback__item {
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: 35px auto;
   column-gap: 28px;
+  padding: 60px 62px 0;
+
 
   @include vp-767 {
     column-gap: 15px;
+    grid-template-rows: 85px auto;
+    padding-top: calc(62px - (768px - 100vw) / (768 - 320) * (62 - 40));
+    padding-left: calc(62px - (768px - 100vw) / (768 - 320) * (62 - 25));
+    padding-right: calc(62px - (768px - 100vw) / (768 - 320) * (62 - 25));
   }
 }
 
@@ -83,7 +83,7 @@
 
 .feedback__item h3 {
   @include font(20px, 20px, 700, $color-default-white);
-  margin: 0 0 15px;
+  margin: 0;
 
   @include vp-767 {
     @include font(20px, 26px, 700, $color-default-white);
@@ -99,42 +99,62 @@
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
-    padding-top: 10px;
+    // padding-top: 10px;
   }
 }
 
-.feedback__button {
-  position: absolute;
-  width: 16px;
-  height: 32px;
-  border: none;
-  background-color: transparent;
-  top: calc(50% - 16px);
-  cursor: pointer;
+.feedback__button.swiper-button-next {
+  right: calc(340px - (1366px - 100vw) / (1366 - 1200) * (340 - 250));
+  top: 220px;
+
+  @include vp-1199 {
+    right: 40px;
+    top: 200px;
+  }
 
   @include vp-767 {
-    width: 10px;
-    height: 19px;
-    top: calc(50% - 10px);
+    right: 7px;
+    top: 243px;
   }
 
-  &--prev {
-    background-image: url("../../img/svg/button-prev.svg");
-    left: -58px;
+  @media (min-width: 1366px) {
+    right: 340px;
+  }
+
+  &::after {
+    color: $color-dark-gray;
+    font-size: 35px;
 
     @include vp-767 {
-      background-image: url("../../img/svg/button-prev-mobile.svg");
-      left: -30px;
+      font-size: 20px;
     }
   }
+}
 
-  &--next {
-    background-image: url("../../img/svg/button-next.svg");
-    right: -58px;
+.feedback__button.swiper-button-prev {
+  left: calc(340px - (1366px - 100vw) / (1366 - 1200) * (340 - 250));
+  top: 220px;
+
+  @include vp-1199 {
+    left: 40px;
+    top: 200px;
+  }
+
+  @include vp-767 {
+    left: 7px;
+    top: 240px;
+  }
+
+  @media (min-width: 1366px) {
+    left: 340px;
+  }
+
+  &::after {
+    color: $color-dark-gray;
+    font-size: 35px;
 
     @include vp-767 {
-      background-image: url("../../img/svg/button-next-mobile.svg");
-      right: -30px;
+      font-size: 20px;
     }
   }
 }

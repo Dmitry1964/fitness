@@ -2,6 +2,7 @@ import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
 import { playButton, onPlayButtonHendler } from './video';
 import { controlList, setOffersList } from './modules/offers';
+import { feedbackSwiper } from './modules/feedback';
 
 // ---------------------------------
 
@@ -47,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   swiper.slideNext();
-
+  feedbackSwiper.slideNext();
 
 
   // Modules
