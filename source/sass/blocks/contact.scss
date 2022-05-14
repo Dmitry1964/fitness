@@ -37,7 +37,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -57,6 +57,7 @@
   @include vp-767 {
     padding-left: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
     padding-right: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
+    padding-bottom: 71px;
   }
 }
 
@@ -128,7 +129,7 @@
 
 .contact__field-phone {
   @include vp-767 {
-    margin-bottom: 36px;
+    margin-bottom: 37px;
   }
 }
 
@@ -153,6 +154,10 @@
   &:hover {
     background-color: $color-basic-dark-50;
   }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .contact__form input[name="phone"] {
@@ -160,6 +165,10 @@
 
   &:hover {
     background-color: $color-basic-dark-50;
+  }
+
+  @include vp-767 {
+    width: 100%;
   }
 }
 

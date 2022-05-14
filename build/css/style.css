@@ -1371,7 +1371,6 @@ button,
   background-color: rgba(16, 38, 84, 0.89);
   width: 260px;
   height: 294px;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1793,7 +1792,7 @@ button,
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
-  padding: 60px 62px 25px;
+  padding: 60px 62px 10px;
 }
 
 .feedback__item img {
@@ -3172,12 +3171,13 @@ button,
   }
 
   .contact__title--bid {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .contact__left-block {
     padding-left: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
     padding-right: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
+    padding-bottom: 71px;
   }
 
   .contact__right-block {
@@ -3202,10 +3202,18 @@ button,
   }
 
   .contact__field-phone {
-    margin-bottom: 36px;
+    margin-bottom: 37px;
   }
 
   .contact__form input {
+    width: 100%;
+  }
+
+  .contact__form input[name="name"] {
+    width: 100%;
+  }
+
+  .contact__form input[name="phone"] {
     width: 100%;
   }
 
@@ -3309,14 +3317,11 @@ button,
 
   .footer__icon-vk {
     width: 32px;
+    height: 27px;
   }
 
   .footer__icon-ig {
     width: 27px;
-  }
-
-  .footer__icon-vk {
-    height: 27px;
   }
 }
 

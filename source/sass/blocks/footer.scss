@@ -110,10 +110,7 @@
   }
 }
 
-
-
 @include vp-767 {
-
   .footer__zero {
     order: -5;
   }
@@ -132,14 +129,10 @@
 
   .footer__icon-vk {
     width: 32px;
+    height: 27px;
   }
 
   .footer__icon-ig {
     width: 27px;
   }
-
-  .footer__icon-vk {
-    height: 27px;
-  }
-
 }
