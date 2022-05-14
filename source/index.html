@@ -9,7 +9,6 @@
   <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -78,7 +77,7 @@
               тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для
               всех спортсменов.
             </p>
-            <p class="visually-hidden">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона
               с&nbsp;40&nbsp;тренажерами. Также
               в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
@@ -545,8 +544,9 @@
                 <img src="img/avatar2.png" width="80" height="80" alt="Аватар посетителя фитнес-центра">
                 <h3>Арни</h3>
                 <p>До&nbsp;того, как я&nbsp;начал посещать этот фитнес-центр, я&nbsp;был просто Арни. После полугода
-                  занятий я&nbsp;стал просто каким-то терминатором. Извините за&nbsp;пару сломанных тренажеров.
-                  I&rsquo;ll be&nbsp;back!</p>
+                  занятий я&nbsp;стал просто каким-то терминатором. Извините за&nbsp;пару сломанных тренажеров.<br>
+                  <b>I&rsquo;ll be&nbsp;back!</b>
+                </p>
               </div>
               <div class="feedback__item swiper-slide">
                 <img src="img/avatar3.png" width="80" height="80" alt="Аватар посетителя фитнес-центра">
@@ -562,14 +562,14 @@
           <div class="contact__left-block">
             <article class="contact__bid">
               <h2 class="contact__title contact__title--bid">Бесплатное занятие</h2>
-              <form class="contact__form" action="#" method="GET">
+              <form class="contact__form" action="#" method="post">
                 <div class="contact__field">
                   <label for="name">Имя</label>
                   <input type="text" name="name" id="name" required>
                 </div>
                 <div class="contact__field contact__field-phone">
                   <label for="phone">Телефон</label>
-                  <input type="number" name="phone" id="phone" required>
+                  <input type="tel" name="phone" id="phone" required maxlength="12">
                 </div>
                 <button type="submit">Отправить</button>
               </form>
@@ -668,6 +668,7 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

@@ -926,8 +926,8 @@ button,
 }
 
 .promo__info {
-  padding-left: 59px;
-  padding-top: 47px;
+  padding-left: 55px;
+  padding-top: 50px;
 }
 
 .promo__title {
@@ -997,7 +997,7 @@ button,
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 60px);
   left: calc(50% - 50px);
   cursor: pointer;
 }
@@ -2001,7 +2001,7 @@ button,
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
-  padding-left: 40px;
+  margin-left: 40px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2144,6 +2144,10 @@ button,
     max-width: 510px;
     text-align: center;
     margin: 0 0 42px;
+  }
+
+  .promo__info p:nth-of-type(n + 2) {
+    display: none;
   }
 
   .promo__image img {
@@ -2535,7 +2539,7 @@ button,
   }
 
   .footer__nav a {
-    padding-left: 30px;
+    margin-left: 30px;
   }
 
   .footer__item {
@@ -3179,7 +3183,7 @@ button,
     line-height: 19px;
     font-weight: 400;
     color: #ffffff;
-    padding-left: 0;
+    margin-left: 0;
     padding-bottom: 20px;
   }
 

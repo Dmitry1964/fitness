@@ -32,8 +32,8 @@
 }
 
 .promo__info {
-  padding-left: 59px;
-  padding-top: 47px;
+  padding-left: 55px;
+  padding-top: 50px;
 
   @include vp-1199 {
     padding: 0;
@@ -92,6 +92,10 @@
     max-width: 510px;
     text-align: center;
     margin: 0 0 42px;
+
+    &:nth-of-type(n + 2) {
+      display: none;
+    }
   }
 
   @include vp-767 {
@@ -165,7 +169,7 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 60px);
   left: calc(50% - 50px);
   cursor: pointer;
 

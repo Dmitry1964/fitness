@@ -3,8 +3,10 @@ import { initModals } from './modules/modals/init-modals';
 import { playButton, onPlayButtonHendler } from './video';
 import { controlList, setOffersList } from './modules/offers';
 import { feedbackSwiper } from './modules/feedback';
-
+import { phoneField, pageForm, onPhoneFieldInput, onPhoneFieldFocus } from './modules/form';
 // ---------------------------------
+
+const PHONE_LENGTH = 12;
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -20,6 +22,27 @@ window.addEventListener('DOMContentLoaded', () => {
     const element = evt.target;
     setOffersList(element);
   });
+
+  phoneField.addEventListener('input', () => {
+    onPhoneFieldInput(phoneField.value);
+    if (phoneField.value.length < PHONE_LENGTH) {
+      phoneField.setCustomValidity('Ввести 10 цифр.');
+    } else {
+      phoneField.setCustomValidity('');
+    };
+
+    phoneField.reportValidity();
+  });
+
+  phoneField.addEventListener('focus', onPhoneFieldFocus);
+
+
+  pageForm.addEventListener('submit', (evt) => {
+    if (phoneField.value.split('').length < PHONE_LENGTH) {
+      evt.preventDefault();
+    }
+  })
+
 
   const swiper = new Swiper('.coaches__swiper', {
     slidesPerView: 4,
@@ -49,6 +72,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   swiper.slideNext();
   feedbackSwiper.slideNext();
+
+
 
 
   // Modules
