@@ -28,6 +28,10 @@
   letter-spacing: 0.03em;
   font-family: $second-font;
   height: 26px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .header__content {
@@ -143,6 +147,14 @@
     width: 100%;
     text-align: center;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.65;
+  }
 }
 
 .header__image {
@@ -162,7 +174,6 @@
   padding: 0;
   align-self: flex-end;
   padding-bottom: 42px;
-  // padding-right: 103px;
 
   @include vp-1199 {
     display: none;
@@ -174,6 +185,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 

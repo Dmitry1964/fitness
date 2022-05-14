@@ -137,7 +137,7 @@
 }
 
 .contact__form input {
-  padding: 10px;
+  padding: 10px 10px;
   border: none;
   background-color: transparent;
   color: $color-default-white;
@@ -149,16 +149,29 @@
 
 .contact__form input[name="name"] {
   width: 165px;
+
+  &:hover {
+    background-color: $color-basic-dark-50;
+  }
 }
 
 .contact__form input[name="phone"] {
   width: 140px;
+
+  &:hover {
+    background-color: $color-basic-dark-50;
+  }
 }
 
 .contact__form button {
   grid-column-start: 1;
   grid-column-end: 3;
   user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   @include font(14px, 16px, 700, $color-default-white);
   letter-spacing: 0.05em;
@@ -226,6 +239,10 @@
       padding-left: 0;
     }
   }
+}
+
+.contact__item a:hover {
+  opacity: 0.7;
 }
 
 .contact__item-phone {

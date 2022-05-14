@@ -76,11 +76,13 @@
   }
 }
 
-.coaches__slide:hover .coaches__info {
+.coaches__slide:hover .coaches__info,
+.coaches__slide:focus .coaches__info {
   display: block;
 }
 
-.coaches__slide:hover .coaches__image h3 {
+.coaches__slide:hover .coaches__image h3,
+.coaches__slide:focus .coaches__image h3 {
   display: none;
 }
 

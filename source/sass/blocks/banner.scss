@@ -119,6 +119,10 @@
   border: 4px solid $color-default-white;
   text-align: center;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   @include vp-1199 {
     @include font(10px, 12px, 700, $color-default-white);
     border: 2px solid $color-default-white;
