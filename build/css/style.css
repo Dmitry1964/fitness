@@ -1794,7 +1794,7 @@ button,
   -moz-column-gap: 28px;
   column-gap: 28px;
   padding: 60px 62px 10px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .feedback__item img {
@@ -2705,7 +2705,7 @@ button,
 
   .header__list {
     top: 80px;
-    left: -80px;
+    left: -75px;
   }
 
   .header__title {
@@ -2742,6 +2742,11 @@ button,
     justify-items: left;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .promo__info {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .promo__title {
@@ -3011,7 +3016,7 @@ button,
   }
 
   .features__item-spec p {
-    margin: 0 0 10px;
+    margin: 0 0 5px;
   }
 
   .actions {
@@ -3335,10 +3340,6 @@ button,
 }
 
 @media (max-width: 320px) {
-  .container {
-    padding: 0 15px;
-  }
-
   .promo__info p {
     width: 258px;
   }
