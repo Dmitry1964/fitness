@@ -1023,7 +1023,7 @@ button,
 
 .offers {
   padding-top: 120px;
-  padding-bottom: 119px;
+  padding-bottom: 99px;
   background-color: #f8f9fc;
 }
 
@@ -1115,9 +1115,10 @@ button,
   -moz-column-gap: 40px;
   column-gap: 40px;
   row-gap: 40px;
+  row-gap: 40px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .offers__item {
@@ -2245,7 +2246,7 @@ button,
 
   .offers {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   .offers__wrapper {
@@ -2792,7 +2793,7 @@ button,
 
   .offers {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 
   .offers__wrapper {

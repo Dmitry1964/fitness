@@ -1,16 +1,16 @@
 .offers {
   padding-top: 120px;
-  padding-bottom: 119px;
+  padding-bottom: 99px;
   background-color: $color-light-blue;
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   @include vp-767 {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 }
 
@@ -136,9 +136,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
   row-gap: 40px;
+  row-gap: 40px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
 
   @include vp-1199 {
     grid-template-columns: 1fr;

@@ -1,7 +1,7 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
 import { playButton, onPlayButtonHendler } from './video';
-import { controlList, setOffersList } from './modules/offers';
+import { controlList, setOffersList, initOffersList } from './modules/offers';
 import { feedbackSwiper } from './modules/feedback';
 import { phoneField, pageForm, onPhoneFieldInput, onPhoneFieldFocus } from './modules/form';
 // ---------------------------------
@@ -83,6 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initOffersList();
   });
 });
 

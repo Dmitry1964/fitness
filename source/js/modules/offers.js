@@ -3,6 +3,17 @@ const controlButtons = controlList.querySelectorAll('.offers__control-item');
 const offersSection = document.querySelector('.offers');
 const offersList = offersSection.querySelectorAll('.offers__list');
 
+const PERIOD_SIX = '6 months';
+const PERIOD_TWELVE = '12 months';
+
+const initOffersList = () => {
+  offersList.forEach((elem) => {
+    const period = elem.getAttribute('data-period');
+    if (period === PERIOD_SIX || period === PERIOD_TWELVE) {
+      elem.classList.add('visually-hidden');
+    };
+  });
+}
 
 const setOffersList = (element) => {
   const period = element.getAttribute('data-period');
@@ -21,4 +32,4 @@ const setOffersList = (element) => {
 };
 
 
-export { controlList, setOffersList }
+export { controlList, setOffersList, initOffersList }
