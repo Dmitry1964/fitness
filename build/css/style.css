@@ -1802,7 +1802,7 @@ button,
   -moz-column-gap: 28px;
   column-gap: 28px;
   padding: 60px 62px 10px;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .feedback__item img {
