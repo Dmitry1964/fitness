@@ -1375,7 +1375,9 @@ button,
   top: 0;
   left: 0;
   padding-top: 55px;
+  padding-bottom: 20px;
   display: none;
+  overflow: auto;
 }
 
 .coaches__slide:hover .coaches__info,
@@ -1793,6 +1795,7 @@ button,
   -moz-column-gap: 28px;
   column-gap: 28px;
   padding: 60px 62px 10px;
+  overflow: scroll;
 }
 
 .feedback__item img {
@@ -1816,6 +1819,7 @@ button,
   font-weight: 400;
   color: #ffffff;
   margin: 0;
+  height: 100px;
 }
 
 .feedback__button.swiper-button-next {
@@ -2067,6 +2071,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  padding: 7px 0;
 }
 
 .footer__nav a:hover {
@@ -3145,6 +3150,7 @@ button,
     -ms-grid-column-span: 2;
     grid-column-end: 3;
     text-align: center;
+    height: 167px;
   }
 
   .feedback__button.swiper-button-next {
@@ -3279,6 +3285,7 @@ button,
     color: #ffffff;
     margin-left: 0;
     padding-bottom: 20px;
+    padding-top: 0;
   }
 
   .footer__list {

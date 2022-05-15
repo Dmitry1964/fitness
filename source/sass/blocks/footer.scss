@@ -61,6 +61,7 @@
   @include font(14px, 16px, 400, $color-default-white);
   margin-left: 40px;
   user-select: none;
+  padding: 7px 0;
 
   &:hover {
     opacity: 0.7;
@@ -74,6 +75,7 @@
     @include font(16px, 19px, 400, $color-default-white);
     margin-left: 0;
     padding-bottom: 20px;
+    padding-top: 0;
   }
 }
 

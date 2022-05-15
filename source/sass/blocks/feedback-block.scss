@@ -55,6 +55,7 @@
   grid-template-rows: 35px auto;
   column-gap: 28px;
   padding: 60px 62px 10px;
+  overflow: scroll;
 
 
   @include vp-767 {
@@ -94,12 +95,13 @@
 .feedback__item p {
   @include font(16px, 140%, 400, $color-default-white);
   margin: 0;
+  height: 100px;
 
   @include vp-767 {
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
-    // padding-top: 10px;
+    height: 167px;
   }
 }
 
