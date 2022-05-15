@@ -2745,11 +2745,6 @@ button,
     padding-right: 0;
   }
 
-  .promo__info {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .promo__title {
     font-size: calc(42px - (768px - 100vw) / (768 - 320) * (42 - 32));
     line-height: calc(42px - (768px - 100vw) / (768 - 320) * (42 - 32));
