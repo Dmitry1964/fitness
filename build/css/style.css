@@ -642,7 +642,6 @@ button,
 }
 
 .container {
-  width: 100%;
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
@@ -2240,8 +2239,8 @@ button,
   .promo__video button {
     width: 74px;
     height: 74px;
-    top: calc(50% - 37px);
-    left: calc(50% - 37px);
+    top: calc(50% - 45px);
+    left: calc(50% - 38px);
   }
 
   .offers {
@@ -3169,22 +3168,23 @@ button,
   .contact__title {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 35px;
   }
 
   .contact__title--bid {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   .contact__left-block {
     padding-left: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
     padding-right: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
-    padding-bottom: 71px;
+    padding-bottom: 68px;
   }
 
   .contact__right-block {
     padding-left: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
     padding-right: calc(133px - (768px - 100vw) / (768 - 320) * (133 - 15));
-    padding-bottom: 45px;
+    padding-bottom: 40px;
   }
 
   .contact__form {
@@ -3245,7 +3245,7 @@ button,
   }
 
   .footer {
-    padding-top: 46px;
+    padding-top: 50px;
   }
 
   .footer__wrapper {
@@ -3263,7 +3263,7 @@ button,
     column-gap: 75px;
     -ms-grid-column-align: left;
     justify-self: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .footer__logo {
