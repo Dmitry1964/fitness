@@ -1456,6 +1456,13 @@ button,
   height: 294px;
 }
 
+.coaches__swiper-nojs.swiper-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .features {
   padding-top: 125px;
   padding-bottom: 105px;
@@ -2378,6 +2385,11 @@ button,
     height: 294px;
   }
 
+  .coaches__swiper-nojs.swiper-wrapper {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .features {
     padding-top: 96px;
     padding-bottom: 100px;
@@ -2930,6 +2942,11 @@ button,
   .coaches__slide img {
     width: 226px;
     height: 274px;
+  }
+
+  .coaches__swiper-nojs.swiper-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .features {

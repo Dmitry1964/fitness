@@ -6,6 +6,12 @@ import { feedbackSwiper } from './modules/feedback';
 import { phoneField, pageForm, onPhoneFieldInput, onPhoneFieldFocus } from './modules/form';
 // ---------------------------------
 
+const coachSwiper = document.querySelector('.coaches__swiper-wrapper');
+
+const initCoachSwiper = () => {
+  coachSwiper.classList.remove('coaches__swiper-nojs');
+}
+
 const PHONE_LENGTH = 12;
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -84,6 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initOffersList();
+    initCoachSwiper();
   });
 });
 
