@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../../fonts/Roboto-Condensed.woff2") format("woff2"), url("../../fonts/Roboto-Condensed.woff") format("woff");
+  src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 300;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Light.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 700;
   font-family: "Roboto";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 400;
   font-family: "BegasNeue";
   font-display: swap;
-  src: url("../../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../../fonts/BebasNeue-Regular.woff") format("woff");
+  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -421,7 +421,7 @@ template {
   font-weight: 700;
   font-family: "BegasNeue";
   font-display: swap;
-  src: url("../../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../../fonts/BebasNeue-Bold.woff") format("woff");
+  src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
 }
 
 *,
