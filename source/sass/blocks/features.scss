@@ -62,7 +62,7 @@
 
 .features__item {
   display: flex;
-  height: 162px;
+  min-height: 162px;
 
   &:nth-child(n+4) {
     align-items: flex-end;
@@ -78,13 +78,13 @@
   }
 
   @include vp-1199 {
-    height: 118px;
+    min-height: 118px;
   }
 
   @include vp-767 {
     flex-direction: column;
     align-items: center;
-    height: 145px;
+    min-height: 145px;
     padding-left: 45px;
     padding-right: 45px;
 
@@ -182,7 +182,7 @@
   flex-direction: column;
   align-items: center;
   padding: 55px 34px;
-  height: 307px;
+  min-height: 307px;
   margin-top: 10px;
 
   @include vp-1199 {
@@ -194,7 +194,7 @@
     padding-bottom: 38px;
     width: 442px;
     justify-self: center;
-    height: 239px;
+    min-height: 239px;
     margin: 0;
   }
 

@@ -641,6 +641,10 @@ button,
   transition: none !important;
 }
 
+.block-hidden {
+  display: none;
+}
+
 .container {
   max-width: 1366px;
   margin: 0 auto;
@@ -1027,7 +1031,7 @@ button,
   background-color: #f8f9fc;
 }
 
-.offers__wrapper {
+.offers__wrapper.container {
   padding-left: 103px;
   padding-right: 103px;
   position: relative;
@@ -1118,6 +1122,10 @@ button,
   list-style: none;
   padding: 0;
   margin: 0 0 20px;
+}
+
+.offers__list--hidden {
+  display: none;
 }
 
 .offers__item {
@@ -1368,8 +1376,8 @@ button,
 
 .coaches__info {
   background-color: rgba(16, 38, 84, 0.89);
-  width: 260px;
   height: 294px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1497,7 +1505,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 162px;
+  min-height: 162px;
 }
 
 .features__item:nth-child(n+4) {
@@ -1581,7 +1589,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 55px 34px;
-  height: 307px;
+  min-height: 307px;
   margin-top: 10px;
 }
 
@@ -1700,11 +1708,17 @@ button,
 }
 
 .actions__info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  row-gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 40px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .actions__info-wrapper {
@@ -1801,7 +1815,6 @@ button,
   -moz-column-gap: 28px;
   column-gap: 28px;
   padding: 60px 62px 10px;
-  overflow: auto;
 }
 
 .feedback__item img {
@@ -1825,7 +1838,7 @@ button,
   font-weight: 400;
   color: #ffffff;
   margin: 0;
-  height: 100px;
+  min-height: 100px;
 }
 
 .feedback__button.swiper-button-next {
@@ -1996,7 +2009,7 @@ button,
   content: "";
   position: absolute;
   width: 1px;
-  height: 102px;
+  height: 80%;
   background-color: #74819c;
   top: 5px;
   left: 58%;
@@ -2043,9 +2056,9 @@ button,
   display: grid;
   -ms-grid-columns: auto 61.03% 1fr;
   grid-template-columns: auto 61.03% 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -2062,9 +2075,8 @@ button,
 }
 
 .footer__logo {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .footer__nav a {
@@ -2095,6 +2107,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
+  list-style: none;
 }
 
 .footer__item {
@@ -2255,7 +2268,7 @@ button,
     padding-bottom: 80px;
   }
 
-  .offers__wrapper {
+  .offers__wrapper.container {
     padding-left: 163px;
     padding-right: 163px;
   }
@@ -2417,7 +2430,7 @@ button,
   }
 
   .features__item {
-    height: 118px;
+    min-height: 118px;
   }
 
   .features__item:nth-child(5n +2) dl {
@@ -2453,7 +2466,7 @@ button,
     width: 442px;
     -ms-grid-column-align: center;
     justify-self: center;
-    height: 239px;
+    min-height: 239px;
     margin: 0;
   }
 
@@ -2807,7 +2820,7 @@ button,
     padding-bottom: 50px;
   }
 
-  .offers__wrapper {
+  .offers__wrapper.container {
     padding-left: calc(163px - (768px - 100vw) / (768 - 320) * (163 - 15));
     padding-right: calc(163px - (768px - 100vw) / (768 - 320) * (163 - 15));
   }
@@ -2985,7 +2998,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 145px;
+    min-height: 145px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -3166,7 +3179,6 @@ button,
     -ms-grid-column-span: 2;
     grid-column-end: 3;
     text-align: center;
-    height: 167px;
   }
 
   .feedback__button.swiper-button-next {

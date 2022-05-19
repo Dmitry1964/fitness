@@ -4,7 +4,9 @@ const phoneField = pageForm.querySelector('input[type="tel"]');
 const CODE_COUNTRY = '+7'
 
 const onPhoneFieldFocus = () => {
-  phoneField.value = CODE_COUNTRY;
+  if (phoneField.value.length === 0) {
+    phoneField.value = CODE_COUNTRY;
+  }
 }
 
 const onPhoneFieldInput = (phone) => {

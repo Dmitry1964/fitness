@@ -10,25 +10,29 @@ const initOffersList = () => {
   offersList.forEach((elem) => {
     const period = elem.getAttribute('data-period');
     if (period === PERIOD_SIX || period === PERIOD_TWELVE) {
-      elem.classList.add('visually-hidden');
+      elem.classList.add('offers__list--hidden');
     };
   });
 }
 
 const setOffersList = (element) => {
-  const period = element.getAttribute('data-period');
-  controlButtons.forEach((item) => {
-    item.classList.remove('offers__control-item--current');
-    if (item.getAttribute('data-period') === period) {
-      item.classList.add('offers__control-item--current');
-    }
-  });
-  offersList.forEach((item) => {
-    item.classList.add('visually-hidden');
-    if (item.getAttribute('data-period') === period) {
-      item.classList.remove('visually-hidden');
-    }
-  });
+  if (element.classList.contains('offers__control-list')) {
+    return;
+  } else {
+    const period = element.getAttribute('data-period');
+    controlButtons.forEach((item) => {
+      item.classList.remove('offers__control-item--current');
+      if (item.getAttribute('data-period') === period) {
+        item.classList.add('offers__control-item--current');
+      }
+    });
+    offersList.forEach((item) => {
+      item.classList.add('offers__list--hidden');
+      if (item.getAttribute('data-period') === period) {
+        item.classList.remove('offers__list--hidden');
+      }
+    });
+  }
 };
 
 

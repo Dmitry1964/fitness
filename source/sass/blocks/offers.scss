@@ -14,7 +14,7 @@
   }
 }
 
-.offers__wrapper {
+.offers__wrapper.container {
   padding-left: 103px;
   padding-right: 103px;
   position: relative;
@@ -147,6 +147,10 @@
   @include vp-767 {
     row-gap: 35px;
   }
+}
+
+.offers__list--hidden {
+  display: none;
 }
 
 .offers__item {
