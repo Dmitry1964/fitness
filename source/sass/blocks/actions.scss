@@ -138,7 +138,9 @@
   justify-content: flex-start;
 
   @include vp-1199 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
 
