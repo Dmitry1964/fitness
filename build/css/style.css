@@ -996,7 +996,7 @@ button,
 .promo__video {
   position: absolute;
   left: 39.5%;
-  top: 300px;
+  top: 288px;
 }
 
 .promo__video video {
@@ -1016,7 +1016,7 @@ button,
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: calc(50% - 60px);
+  top: calc(50% - 50px);
   left: calc(50% - 50px);
   cursor: pointer;
 }
@@ -2249,7 +2249,7 @@ button,
 
   .promo__video {
     left: calc(50% - 133px);
-    top: 495px;
+    top: 488px;
   }
 
   .promo__video video {
@@ -2259,7 +2259,7 @@ button,
   .promo__video button {
     width: 74px;
     height: 74px;
-    top: calc(50% - 45px);
+    top: calc(50% - 38px);
     left: calc(50% - 38px);
   }
 
